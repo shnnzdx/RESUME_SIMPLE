@@ -1,177 +1,242 @@
 ---
 name: evidence-first-resume
-
-description: "Create, review, shorten, translate, and restructure resumes/CVs using concise, evidence-backed accomplishments and clean, easy-to-scan formatting. Apply to any industry or role; preserve the candidate's actual experience, metrics, scope, and implementation status."
+description: "Write, review, shorten, translate, and restructure resumes/CVs in English or Chinese. Favor concise, evidence-backed accomplishments; preserve facts, metrics, scope, ownership, and project status across all industries and roles."
 ---
 
-# Evidence-First Resume｜简洁、可信、结果导向的简历写作
+# Evidence-First Resume / 结果导向简历
 
-## 1. 目标与适用范围
+A bilingual, role-agnostic agent skill. **Language rule:** Respond in the user's requested language; if unstated, follow the language of their prompt or working resume. Use the same factual evidence and claim strength in English and Chinese.
 
-当用户希望编写、审阅、精简、翻译或调整简历（Resume / CV）时使用本 Skill。**不预设任何岗位**；根据用户提供的经历和要求决定内容重点，保持原始事实不变。
+> **Core:** Problem → Action → Evidence/Impact. Keep real achievements visible without turning a resume into a tool inventory.
 
-目标是让阅读者能够在约 10 秒内迅速辨认候选人的核心能力，而不是读完一份技术说明书。优先展现：**遇到什么问题 → 做了什么关键决策或行动 → 取得了什么经过证实的结果或价值**。
+**Quick execution checklist / 快速执行检查**
+1. Read the candidate's actual source materials; separate fact from assumption. / 先读事实来源。
+2. Respect specified scope, sections, bullet counts, and language. / 尊重用户格式。
+3. Give each bullet one distinct contribution and only essential technologies. / 一条一重点。
+4. Describe confirmed outcome or verified capability, not invented improvement. / 只写可证实结果。
+5. Separate deployed, implemented, tested, prototyped, designed, and proposed. / 区分实施状态。
+6. Deliver copy-ready text first; keep commentary short. / 成品优先，解释简短。
 
-### 核心原则
+---
 
-1. **Evidence before adjectives：** 具体事实、产物、测试和数据优先于“卓越”“显著提升”等空泛修饰。
-2. **One bullet, one point：** 一条 Bullet 只证明一种主要能力，不把多个独立事件塞进一句。
-3. **Problem → Action → Impact：** 能自然说明问题、行动和结果，但不要机械地为每条编造完整三段式。
-4. **Few tools, clear purpose：** 每条正文仅保留帮助理解方案的 1–3 个关键技术/工具，其余放在 Skills 或面试材料。
-5. **Accurate scope：** 区分已实现、已部署、已验证、仅设计、仅研究、建议中和正在开发；不夸大个人贡献。
-6. **Readable before exhaustive：** 保留辨识度最强的成果，把底层实施细节留给面试或项目深挖。
+# Evidence-First Resume — English Guide
 
-## 2. 推荐简历结构
+## Purpose and activation
+Use this skill to draft, critique, shorten, restructure, or translate a resume/CV. It is **role-agnostic**: do not impose a specific occupation, technology stack, or hiring rubric unless the user explicitly supplies one.
 
-默认使用清晰的单栏排版，结构随素材量和用户既有简历调整：
+**Success criterion:** a reader can quickly understand what the candidate owned, which problem they addressed, what action they took, and what was actually delivered or verified. Optimize for clear evidence, not maximum keyword density.
 
-1. **Name & Contact**：姓名；邮箱、电话；有价值的 LinkedIn / GitHub / Portfolio 链接。不要堆积多余个人信息。
-2. **Education**：学校、学位/专业、所在地、日期；GPA/荣誉仅在确实有价值且已核实时保留。
-3. **Work Experience**：公司/组织、职务、地点、日期与精选 Bullet。优先展示最具实质影响的工作。
-4. **Projects**：项目名称、性质（如 production application / local prototype / architecture case study）、项目链接和成果 Bullet。
-5. **Technical Skills / Skills**：按技术用途分组，通常 2–4 行；避免重复项目正文中的所有关键词。
-6. **Certifications / Awards / Leadership**：依据价值和空间决定是否独立呈现；允许前移、合并或省略。
+## Operating rules (highest priority)
+1. **Truth outranks polish.** Preserve supported facts, dates, metrics, scope, individual contribution, and project status. Never invent impact.
+2. **One bullet, one main contribution.** Do not combine unrelated incidents or describe an entire architecture in a single bullet.
+3. **Problem → Action → Evidence/Impact.** Prefer this reasoning pattern, but write naturally; no forced three-part syntax.
+4. **Tools have a purpose.** Name only the 1–3 technologies essential to explain each action. Keep broader coverage in Skills.
+5. **Outcomes need not be percentages.** Valid evidence includes shipped features, observed behavior, tests, recovered services, documented decisions, and usable operating capabilities.
+6. **Respect the user's format.** Preserve explicitly chosen project selection, bullet counts, ordering, language, and sections unless asked to rethink them.
+7. **Limit unnecessary commentary.** Deliver a polished, copy-ready revision first; explain only meaningful trade-offs or facts needing confirmation.
 
-**不是强制顺序。** 尊重用户现有结构；只有在明显改善阅读和取舍时才调整。若用户要求只修改某一个模块，其他部分不主动重写。
+## Recommended resume layout
+Use a clean, single-column, ATS-readable format by default. Adapt to the candidate and the user's requested structure.
 
-### 内容配额（默认建议，不是硬规定）
+- **Header:** name, working contact details, relevant professional links. Avoid unnecessary personal data.
+- **Education:** institution, qualification, field, dates, and credible distinctions.
+- **Work Experience:** organization, title, location/dates, selected accomplishments.
+- **Projects:** project name, URL if relevant, and **explicit project status** (deployed product, local prototype, case study, research, etc.).
+- **Skills:** group by function and evidence; normally 2–4 concise lines.
+- **Certifications / Awards / Leadership:** include when they strengthen the story or are required by the user.
 
-- 最重要的工作经历：约 3–5 条 Bullet。
-- 次要工作经历：约 1–2 条 Bullet。
-- 核心个人项目：约 3–4 条 Bullet；内容特别充实或用户指定时可使用 5 条。
-- 每个 Bullet：英文以 **20–30 words** 为常见目标；中文尽量控制在简历排版 **1–2 行**。明确的事实比机械字数限制更重要。
-- 早期职业阶段优先尝试 **一页可读的英文简历**，但绝不能通过极小字号或不合理压缩牺牲可读性；必要时使用内容均衡的两页。
-- 对项目数量、每项 Bullet 数、Skills 行数有用户明确要求时，**优先执行用户要求**。
+Order is flexible. Do not add sections simply because this list exists.
 
-## 3. Bullet Point 生成规范
+**Length guidance, not quotas:** lead experience usually 3–5 bullets; secondary experience 1–2; major project 3–4 (or more if warranted). English bullets often work at roughly 20–30 words, preferably 1–2 visual lines. These are defaults, **not** reasons to remove critical meaning or override the user's specified counts. For early-career English resumes, try a readable one-page layout first; use two balanced pages when justified, rather than shrinking text excessively.
 
-### 写作框架
+## Writing accomplishments
+Start with a concrete action verb and identify the most meaningful change.
 
-英文参考：
+> **[Action + ownership]** addressed **[specific problem]** through **[selective approach]**, leading to **[verified result or new capability]**.
 
-> **[Strong action verb] + [specific problem / ownership] + [key technical approach] + [verified result or operational value].**
+The bracketed pattern is a drafting aid, **not** a literal sentence template. Lead with the strongest evidence when that scans better.
 
-中文参考：
+**Good evidence (highest specificity first):**
+1. Recorded before/after metrics, counts, or outcomes **with the correct measurement scope**.
+2. Completed and validated delivery: a working release, reproducible test suite, resolved incident, verified workflow.
+3. Operational or stakeholder value: clearer diagnostics, traceable records, documented runbook, a decision informed by analysis.
+4. Design or proposal: accurate decision rationale, trade-off analysis, or recommendation clearly labeled **not implemented**.
 
-> **[核心能力/问题]：** 为解决[具体瓶颈]，使用[关键方案]完成[实际交付]，实现或验证[可信结果]。
+Use active verbs such as *Built, Implemented, Designed, Automated, Diagnosed, Resolved, Validated, Integrated,* and *Analyzed*. Use *Led, Owned, Productionized,* and *Improved* only if evidence supports that degree of responsibility and outcome.
 
-框架只提供思路，不要让所有 Bullet 都读起来像相同模板。允许直接从最强的动作与结果切入。
+Avoid vague expressions (*responsible for, familiar with, various, significantly improved*) without substantiation. Keep only the most distinctive verified numbers; multiple log values are usually interview detail, not resume copy.
 
-### 结果的证据强度（从高到低）
+### Before / after example (fictional placeholders)
+**Weak:** Used Python, queues, databases, cloud services, and dashboards for a distributed platform.
 
-1. **真实测量结果：** 例如前后指标、确切完成数、实测恢复情况，并明确测量范围。
-2. **完成并验证的工程结果：** 例如上线、恢复运行、通过指定测试、实现失败隔离、完成端到端验证。
-3. **实际交付价值：** 例如生成可追溯运行记录、建立可复用排障流程、为团队提供容量决策依据。
-4. **设计或建议：** 如提出架构方案、分析取舍、建议治理方向；必须明确没有宣称已上线。
+**Better:** Built a [specific monitoring workflow] using [two key tools] to consolidate [fragmented signals], giving operators [demonstrated diagnostic capability].
 
-无量化证据时，写**真实的功能性/运营性结果**；绝不杜撰节约百分比、性能提升、可用性、MTTR、用户规模或收益数字。
+**Better with a measured result:** Automated [manual process] with [key tool], reducing [verified failure mode] from [baseline] to [observed result].
 
-### 词句选择
+Never replace the bracketed placeholders with fabricated numbers.
 
-- 优先动词：Built, Implemented, Designed, Automated, Diagnosed, Resolved, Validated, Integrated, Deployed, Standardized, Analyzed。
-- 谨慎使用：Led, Owned, Productionized, Resolved, Improved；只有存在对应证据才用。
-- 避免：Responsible for、Familiar with、Used many technologies、Passionate about、Successfully、Various、Significantly（无指标时）。
-- 缩写在目标阅读者不一定熟悉时解释一次；避免一条堆砌大量缩写。
-- 数字应服务于理解成果；保留最有辨识度、可核实的 **1–2 个数字**，不把所有日志指标都放进一条。
+## Selecting and differentiating content
+For every candidate bullet, ask:
+- Does it reveal a real problem, meaningful delivery, decision, or contribution?
+- Is the **candidate's** involvement clear rather than implying sole ownership of team work?
+- Does it contribute a distinct capability, instead of repeating another bullet?
+- Does the evidence survive technical follow-up?
+- Is the detail important for a ten-second scan, or better saved for an interview?
 
-### 改写示例（占位符；不是用户真实经历）
+Prioritize the strongest work; remove redundant tool lists. Give each experience a distinct narrative (delivery, diagnosis, architecture trade-off, testing, operations, analysis, etc.) rather than using identical labels for all projects.
 
-不佳：
-> Worked with Python, queues, databases, cloud services, dashboards, and monitoring tools for a distributed platform.
+## Implementation-status vocabulary
+**Keep these claims separate:**
+- **Deployed / productionized:** actually running in the stated environment.
+- **Implemented / built:** completed code or functionality; does not alone imply production usage.
+- **Validated / tested:** backed by tests or an experiment within the stated scope.
+- **Prototyped locally:** demonstrated in a local prototype, not an AWS/cloud production deployment.
+- **Designed / proposed / recommended:** architecture or remediation not necessarily implemented.
+- **Investigated:** determined findings or likely cause; not automatically resolved.
 
-推荐：
-> Automated [repetitive operation] with [key system/tool], reducing [verified issue] and enabling [observed operational outcome].
+A successful controlled experiment is **not** a long-term uptime/SLO claim. A design for 15,000 hypothetical daily requests is **not** actual traffic. Proposed fixes cannot become resolved incidents during editing.
 
-若没有量化结果：
-> Built [specific system] to unify [fragmented inputs], giving the team [verified capability such as traceable diagnostics].
+## Skills section
+Group capabilities by function (examples only): *Programming & Backend; Cloud & DevOps; Databases & Distributed Systems; Reliability & Testing*. Choose categories to match **actual experience** and available space.
 
-## 4. 内容筛选与去重
+- List specific languages, platforms, databases, tools, and demonstrable practices.
+- Keep a useful overlap with the work bullets for scanability, but do not duplicate every technology.
+- Separate **hands-on** technologies from **architecture design only** when their inclusion could mislead.
+- Do not add trendy tools, certifications, or generic soft skills without evidence.
+- Respect explicit limits (for example: 2 lines in Chinese, 4 in English).
 
-逐条检查现有描述：
+## English and Chinese versions
+- Match the **output language requested by the user**; if unstated, follow the language of their request or working draft.
+- Translate **meaning and claim strength**, not word-for-word structure. Keep dates, metrics, ownership, product names, and status identical.
+- Favor idiomatic English and clear, concise Chinese.
+- Translate 主导 as *Led* only with real leadership evidence; translate 已设计、已验证、已上线 and 建议 into appropriately distinct claim strengths.
+- When asked for *text only*, return copy-ready text, not a document artifact or a long explanation.
+- When asked for both languages, make both versions semantically equivalent.
 
-1. **是否解决明确的问题？** 如果只是罗列“用了什么”，改为“为什么使用、解决了什么”。
-2. **是否证明不同的能力？** 同一项目中重复的部署、监控、排障信息可合并。
-3. **是否有可信证据？** 优先保留能被代码、记录、测试或部署事实支撑的描述。
-4. **是否与其他经历差异化？** 不让每个项目都只写“设计架构、使用云服务、提高效率”。
-5. **是否值得在 10 秒内被看到？** 如果不是最具辨识度的信息，移到面试准备材料。
+## Fact-check gate (mandatory before finalizing)
+Check the source resume and any supplied project evidence. Do not silently reconcile disagreements.
 
-每段经历尽量形成有层次的故事，但不强制使用同一种顺序。例如：
+- Names, degrees, titles, dates, locations, awards, certifications, and URLs.
+- Numbers and units, time windows, baselines, experiment versus production scope.
+- Individual ownership versus collective delivery.
+- Diagnosed versus fixed; documented versus automated; built versus deployed.
+- Passed tests versus planned tests; feature-gated functionality versus enabled functionality.
+- Prototype/architecture case study versus live production environment.
+- Whether each named tool is supported by the supplied project evidence.
 
-- 问题解决 / 产品或系统交付
-- 核心设计与取舍
-- 稳定性 / 安全性 / 质量验证
-- 效果、运维可用性或可复用成果
+If versions conflict, use the latest **explicitly confirmed** source; otherwise flag the conflict briefly as **Needs verification**, without guessing. Do not invent uptime, latency, throughput, business revenue, cost savings, MTTR, or hiring/ATS scores.
 
-对于多事件描述，**优先拆开、删去弱项或合并同类项**，而不是压缩成更长的分号句。
+## Layout and delivery checks
+Use consistent spacing, capitalization, tense, dates, headers, and bullets. Make company/project, role, period, and evidence easy to scan. Avoid keyword-heavy bolding, icons, graphics, skill bars, and awkward page splits unless requested.
 
-## 5. Skills 写法
+If creating DOCX/PDF, render the document and check page breaks, line wrapping, links, visual balance, and readability.
 
-- 通常按 2–4 个**能力用途**分组，如 Programming & Backend、Cloud & DevOps、Databases & Distributed Systems、Reliability & Testing。类别随真实技能调整；不依赖特定岗位。
-- 以**可证明的技能**为主，不凭行业热度加入未实践的工具。
-- 正文已体现的核心工具在 Skills 中可以重复一次，以支持快速扫描；但不需要逐个复制所有技术名词。
-- 若用户限定为两行，则选最重要的两组并合并细项；若空间足够且用户同意，可扩至 3–4 行。
-- 将“仅在架构设计中考虑、未实际部署”的技术单独限定为 *Architecture Design* 等，不与实际操作经验混写。
-- 优先列具体语言、系统与工具，再少量列可由经历证明的概念；不要放泛化人格词。
+**Deliverable behavior:**
+- **Edit one section:** return that complete revised section, with minimal explanation.
+- **Edit entire resume:** return one coherent, copy-ready resume; do not scatter inline critiques into it.
+- **Review:** give a clear conclusion, the top 2–4 issues, and replacement text where useful.
+- **Translate:** preserve all claims and numbers across languages.
+- **Generate a file:** only when requested; verify the output before linking.
 
-## 6. 中英双语与翻译
+## Never
+Invent results; turn research into hands-on operations; upgrade proposals into deployments; overclaim leadership; force identical bullet lengths or counts; inflate a skills list; or produce a technical manual disguised as a resume.
 
-- 中文版要求自然、准确、精炼；英文版使用专业但不浮夸的动词和行业通用术语。
-- **翻译以事实等价为先**，不要在英文转换时额外制造影响、项目规模或领导责任。
-- 保留产品名、服务名、测试数和技术术语的准确拼写。
-- 不要机械直译“主导、落地、闭环、赋能”；按已核实的个人职责分别使用 Led / Built / Implemented / Delivered / Enabled。
-- 如果用户说“直接输出文字”，给可直接复制的文本，不强行创建 Word、PDF 或额外文件。
+**Final test:** For each line, can a reader explain what problem the candidate addressed, what they did, and what verifiable value resulted? If not, rewrite or remove it.
 
-## 7. 真实性校验（必须）
+---
 
-改写前后逐项核实：
+# Evidence-First Resume — 中文指南
 
-- 日期、地点、岗位名称、学校和证书是否与最新可信材料一致。
-- 同一项目的不同简历版本若出现数字冲突，**不擅自选一个**；以用户最新明确确认的数字为准，未确认时标注待核实。
-- 个人职责和团队交付是否混淆；避免在未有证据时声称“主导”整个项目。
-- 故障“已分析 / 已建议”是否被错误写成“已修复 / 已解决”。
-- 设计方案、本地原型、实验结果是否被错误写成真实生产环境运行。
-- 测试数是否是实际执行并通过的测试，而非计划测试；实验 100% 通过率不得写成长期生产可用性。
-- 时间、费用、容量、成功率等指标的单位、范围及前后关系是否准确。
-- 用户未明确提供的业务结果不作任何推断性承诺。
+## 使用场景与目标
+用于编写、审阅、精简、重组、翻译各类简历（Resume/CV），**不预设特定岗位**。只有用户明确提出目标岗位或职位描述时，才针对性调整关键词与内容顺序。
 
-若存在**会影响投递可信度的重要冲突**，在最终正文后用最少的文字单独列出待核实项，不要用大量免责声明淹没成品。
+目标是让读者快速看懂：**候选人负责了什么、解决了什么问题、采取了什么行动、实际交付或验证了什么结果。** 重证据，不堆名词。
 
-## 8. 排版与呈现
+## 最高优先级原则
+1. **真实高于润色。** 保留可证实的日期、数字、项目范围、个人贡献及实施状态，不虚构任何结果。
+2. **一条 Bullet 一项主要贡献。** 不把无关事故或整份架构说明塞进同一条。
+3. **Problem → Action → Evidence/Impact。** 这是思考框架，不要求机械三段式。
+4. **工具服务于问题。** 每条正文尽量只写 1–3 个关键工具，其他技能放入 Skills。
+5. **结果不一定是百分比。** 已上线功能、验证测试、事故恢复、可追溯记录、可复用诊断流程都可能是有效成果。
+6. **尊重用户约束。** 项目取舍、条数、顺序、语言、章节已有明确要求时，不擅自修改。
+7. **先给可直接使用的成品。** 少做与请求无关的长篇解释，有事实冲突时简短标注。
 
-- 使用清晰标题、单栏布局、统一字号和日期格式；优先纯文本可解析性与 ATS 兼容性。
-- 每条 Bullet 视觉上尽量控制在 1–2 行，必要时压缩技术细节，不靠缩小字号解决。
-- 强调信息的层级：**公司 / 项目 > 职务 / 属性 / 日期 > Bullet 内容**。
-- 数字、项目链接和区分度强的产物应容易扫到，但**不要每个关键词都加粗**。
-- 避免跨页拆开一个项目的标题和第一条 Bullet；不要出现第一页拥挤、第二页大量留白的失衡布局。
-- 不自动添加职业摘要、头像、图标、技能进度条、图形化评分，除非用户明确要求。
-- 若生成 DOCX/PDF，制作后应渲染检查实际页面、分页和链接；不能只检查内容是否存在。
+## 内容结构与篇幅
+默认采用简洁单栏、ATS 易解析的结构，视用户原稿调整顺序：
 
-## 9. 交付流程
+- **姓名与联系方式**：姓名、邮箱、电话、重要职业链接。
+- **教育经历**：学校、学位/专业、时间、已核实的 GPA 或荣誉。
+- **工作经历**：公司、职位、时间/地点、精选成果 Bullet。
+- **项目经历**：项目名称、链接和项目类型，明确区分生产系统、本地原型、架构案例、研究。
+- **Skills**：按实际能力用途分成通常 2–4 行。
+- **证书 / 奖项 / 领导经历**：按重要性和篇幅安排，不强制出现。
 
-1. **读原始资料**：先掌握原简历、补充信息和用户指定的事实版本；不凭印象覆盖材料。
-2. **确认编辑范围**：只改用户要求的经历、板块或全简历；不要额外改动无关部分。
-3. **筛选事实**：找到每段经历最有证明力、最少重复的成果；区分实施/验证/设计。
-4. **重写 Bullet**：一条一个主要贡献，优先 Problem → Action → Impact，关键工具少而准。
-5. **检查整体结构**：条数、项目顺序、技能分组、篇幅及视觉扫描效率。
-6. **真实性终检**：逐项核对数字、责任范围、技术实施状态和日期。
-7. **交付最终可复制稿**：优先给出一个完成度高的主版本，而不是未经要求提供多套风格。
+默认参考：核心工作 3–5 条，次要经历 1–2 条，核心项目 3–4 条。英文 Bullet 常以 20–30 词、视觉上 1–2 行为目标；中文同样尽量保持 1–2 行。**这不是硬性规定，不能凌驾于真实含义和用户指定条数之上。**
 
-### 默认输出形式
+早期职业阶段优先尝试可读的一页英文简历；内容确实丰富时用视觉均衡的两页，不靠缩小字体硬塞。
 
-- 用户只要求某个经历或 Skills：**直接给修改后的完整模块**，随后最多用 1 段简短解释核心调整。
-- 用户要求整份简历：按正式简历章节输出完整版本；不插入逐条评论。
-- 用户要求评价：先给明确结论，再指出最影响质量的 2–4 个问题，必要时给可直接替换的文字。
-- 用户要求中英文：逐段事实一致；若只要求一种语言，默认只提供该语言。
-- 只有用户要求时才创建 DOCX/PDF；若明确要求 SKILL 文件，则交付 `SKILL.md`。
+## Bullet 写法
+参考表达：
 
-## 10. 不应做的事
+> **[动作/承担责任]** 针对 **[具体问题]** 使用 **[最关键方案]** 完成 **[交付]**，形成 **[有证据的结果或能力]**。
 
-- 不用工具清单代替工作成果。
-- 不用多段冗长解释代替简历成品。
-- 不为凑三段式而虚构业务背景或结果。
-- 不因追求统一而强制所有经历拥有相同数量、长度或句式的 Bullet。
-- 不把某一岗位的关键词写成跨岗位通用的硬性要求。
-- 不在没有来源支持的情况下添加个人成就、技术栈或数字。
-- 不把学习过的知识等同于生产实践。
+按照实际情况自然组织，不强制每条以问题开头。优先保留最能让人记住的动词、具体产物与可信数字。
 
-**最终标准：简历的每一行都应能帮助读者快速回答——候选人解决了什么问题、采取了什么行动，以及有什么可验证的价值。**
+**证据优先级：**
+1. 真实测量的前后变化或完成数，并写清测量范围。
+2. 已交付且验证的功能、测试、部署或故障修复。
+3. 实际运营价值：监控可追溯、排障更明确、支持决策等。
+4. 架构设计与修复建议，必须标明尚未实施的状态。
+
+谨慎使用“主导”“解决”“显著提升”“生产化”等强表述；只在证据支持时使用。没有性能百分比就写已验证的实际能力，**绝不编造数字**。
+
+**示例（仅模板，不代表任何真实经历）：**
+
+不佳：使用 Python、队列、数据库、云服务和仪表板维护分布式平台。
+
+更好：基于[两个关键工具]构建[具体监控流程]，整合[分散信号]，使运营人员能够[已验证的诊断能力]。
+
+如果没有已测量的提升，不应为了强化表达杜撰“降低 40%”等指标。
+
+## 内容取舍与去重
+逐条判断：是否有真实问题或有价值的交付？个人职责是否准确？是否与同一项目的其他 Bullet 重复？是否能经受技术追问？是否值得在快速浏览时看到？
+
+优先选择能说明**交付、故障诊断、设计取舍、测试验证、运营结果**的不同贡献。重复技术名词可移至 Skills；过细的实现留到面试。
+
+## 实施状态必须区分
+- **Deployed/生产部署**：系统确实在指定环境运行。
+- **Implemented/已实现**：功能或代码已完成，不等于上线。
+- **Validated/已验证**：在明确的实验/测试范围内验证。
+- **Local prototype/本地原型**：本地验证，不等于云上生产。
+- **Designed/Proposed/Recommended/设计或建议**：没有自然推导成已实现。
+- **Investigated/已调查**：得到故障发现，不自动等于已修复。
+
+受控实验的成功率不能说成长期系统可用性；假设负载不能说成真实用户流量；功能开关默认关闭的代码不能写成已在生产全面启用。
+
+## Skills 写法
+按能力用途分类，如 Programming & Backend、Cloud & DevOps、Databases & Distributed Systems、Reliability & Testing；根据实际经历选择名称，不绑定岗位。
+
+只写有事实支撑的语言、平台、数据库、工具与技能。关键技术在正文与 Skills 可以适度重复，但不要把每个名词都重复一遍。把仅用于架构设计、未部署的技术标注为 **Architecture Design** 等，不冒充实操经验。
+
+用户要求两行就压缩为两行；允许英文版比中文版略展开，但必须遵守当次明确要求。
+
+## 中英文转换
+遵循用户请求的语言；未说明时参考用户本次语言或当前草稿。**优先保持事实与语气强度等价，而非逐字翻译。**
+
+所有技术名称、数字、日期、职责范围和项目实施状态要一致。中文“主导”只有在事实支持时译为 *Led*；“已设计 / 已验证 / 已上线 / 建议”需对应不同英文动词。要求“直接输出文字”就给可复制稿，不擅自创建文件。
+
+## 真实性终检（必须）
+核对姓名、学校、日期、职位、证书、奖项、链接；数字、单位、测量范围；个人/团队贡献；排查/修复区别；已实现/已部署区别；已执行测试/计划测试区别；原型/生产环境区别。
+
+如果多个版本的数字互相冲突，以用户**最新明确确认**的事实为准；否则标记“待核实”，**不擅自猜测**。不编造运行时间、成本、吞吐、可用性、MTTR、收益或 ATS 分数。
+
+## 排版、质量检查和交付
+单栏、层级清晰、日期格式统一、少量有意义的加粗。避免把项目标题与第一条拆页、第一页挤满而第二页留白、字体过小、装饰性图标或技能进度条。若生成 DOCX/PDF，应渲染检查分页、换行、链接及可读性。
+
+- **只改一块内容**：直接输出完整修改稿，解释尽量简短。
+- **整份简历**：输出连贯可复制版本，不在成品中穿插评论。
+- **评价**：明确结论、最重要的 2–4 个问题及可替换文字。
+- **翻译**：中英两版事实完全对应。
+- **文件交付**：仅用户要求时创建，并验证成品。
+
+**最终标准：每一行都能帮助读者回答——解决了什么问题、采取了什么行动、产出了什么可验证的价值。**
