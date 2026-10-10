@@ -1,32 +1,41 @@
-# Evidence-First Resume
+# Evidence-First Resume / 结果导向简历
 
-A reusable, role-agnostic Agent Skill for writing and editing resumes with concise, verifiable accomplishments.
+A reusable **bilingual (English + 中文)** Agent Skill for creating, reviewing, translating, and simplifying resumes without sacrificing technical substance or factual accuracy.
 
-**Core philosophy:** Problem → Action → Impact, with evidence before adjectives and readability before exhaustiveness.
+**Core philosophy:** **Problem → Action → Evidence / Impact**. Show what you solved and verified—not a long inventory of tools.
 
-## What it does
+## Choose a guide / 选择语言
 
-- Creates and revises resumes in English or Chinese.
-- Rewrites experience into focused, scannable bullet points.
-- Prioritizes measurable and verifiable results without fabricating metrics.
-- Distinguishes production implementation, local prototypes, architectural design, and recommendations.
-- Organizes projects, work experience, technical skills, education, and certifications.
-- Preserves user-requested constraints such as bullet counts, sections, and language.
+| File | Description |
+| --- | --- |
+| [**SKILL.md**](./SKILL.md) | **Canonical bilingual skill**: full English and Chinese instructions in one file. Recommended default for agents. |
+| [**SKILL.en.md**](./SKILL.en.md) | Complete **English-only** version for English-language workflows. |
 
-## Usage
+The skill is **role-agnostic** and applies to engineering, business, analytics, and other resumes. It does not assume a job description unless you supply one.
 
-Provide [`SKILL.md`](./SKILL.md) to an assistant that supports Agent Skills, together with your resume and any relevant background documents. Ask it to apply **Evidence-First Resume** to the whole resume or a specific section.
+## What it covers
 
-**Example request:**
+- Concise, results-oriented bullet points, typically **Problem → Action → Evidence/Impact**.
+- Selecting distinctive achievements, avoiding repetition and technology keyword overload.
+- Resume structure: Education, Experience, Projects, Skills, Certifications, and optional sections.
+- Length and formatting guidance that **defers to the user's requested bullet counts and constraints**.
+- Skills grouped by demonstrated function, not arbitrary keyword lists.
+- Exact distinction among **deployed**, **implemented**, **validated**, **prototyped**, **designed**, and **proposed** work.
+- English ↔ Chinese translation with equivalent facts, responsibility, and claim strength.
+- Mandatory checks for metrics, dates, ownership, implementation status, and layout.
 
-> Apply Evidence-First Resume to my uploaded resume. Keep every claim accurate, remove repetitive implementation details, and write concise bullets that connect the problem, key action, and verified outcome. Give me one polished English version.
+## How to use / 使用方法
 
-## Language
+Add the content of [`SKILL.md`](./SKILL.md) to an assistant or Agent Skills workflow, then provide your current resume and any supporting project notes.
 
-The skill instructions are primarily in Chinese and support output in both English and Chinese.
+**English example:**
+> Use Evidence-First Resume to revise my resume. Preserve every verifiable fact, write short accomplishment-oriented bullets, keep four bullets for my most important project, and return the final text in English.
+
+**中文示例：**
+> 请按照 Evidence-First Resume 优化这份简历。保留真实数据，每条只突出一项贡献，核心项目保留四条 Bullet，直接输出中文最终稿。
 
 ## Notes
 
-- This is a general-purpose writing skill, not a job-specific resume template.
-- It does not claim improved hiring outcomes or ATS scores.
-- No personal resume details are included in this repository starter.
+- The purpose is clearer presentation, **not** inflated claims or an asserted ATS score.
+- Never mistake a local prototype or architecture proposal for a production deployment.
+- This repository contains writing instructions only; it does not contain the author's private resume data.
