@@ -1,6 +1,6 @@
-# Evidence-First Resume / 结果导向简历
+# Evidence-First Resume
 
-A reusable **bilingual (English + 中文)** Agent Skill for creating, reviewing, translating, and simplifying resumes without sacrificing technical substance or factual accuracy.
+A reusable **bilingual (English + Chinese)** Agent Skill for creating, reviewing, translating, and simplifying resumes without sacrificing technical substance or factual accuracy.
 
 **Core philosophy:** **Problem → Action → Evidence / Impact**. Show what you solved and verified—not a long inventory of tools.
 
@@ -24,7 +24,7 @@ The skill is **role-agnostic** and applies to engineering, business, analytics, 
 - English ↔ Chinese translation with equivalent facts, responsibility, and claim strength.
 - Mandatory checks for metrics, dates, ownership, implementation status, and layout.
 
-## How to use / 使用方法
+## How to use
 
 Add the content of [`SKILL.md`](./SKILL.md) to an assistant or Agent Skills workflow, then provide your current resume and any supporting project notes.
 
