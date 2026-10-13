@@ -39,3 +39,17 @@ Add the content of [`SKILL.md`](./SKILL.md) to an assistant or Agent Skills work
 - The purpose is clearer presentation, **not** inflated claims or an asserted ATS score.
 - Never mistake a local prototype or architecture proposal for a production deployment.
 - This repository contains writing instructions only; it does not contain the author's private resume data.
+
+---
+
+## Situational & Behavioral Interview / 情景与行为面试
+
+For interview preparation, use the companion **[Evidence-First S&B Interview Skill](./skills/evidence-first-sb-interview/README.md)**.
+
+- [Bilingual S&B SKILL.md](./skills/evidence-first-sb-interview/SKILL.md) — canonical English + Chinese agent instructions.
+- [English-only SKILL.en.md](./skills/evidence-first-sb-interview/SKILL.en.md) — complete English version.
+- [Story Bank Template](./skills/evidence-first-sb-interview/STORY_BANK_TEMPLATE.md) — blank evidence, STAR, situational, practice, and handoff forms.
+
+The existing resume skill turns verified work into concise resume bullets; the new interview skill turns **verified experiences into defensible Behavioral answers** and **hypothetical scenarios into structured Situational judgment**. It supports any industry and company and does not assume Amazon's leadership principles.
+
+简历 Skill 用于精炼真实履历；新增的 **S&B 面试 Skill** 用于跨公司、跨岗位的真实 STAR 故事准备、情景决策、双语问答、深挖追问和模拟面试。两个 Skill 独立使用，事实标准一致，公开仓库不包含私人故事库。
